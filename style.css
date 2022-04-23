@@ -15,72 +15,11 @@ body {
   align-items: center; */
   overflow: hidden;
 }
+
 h2 {
   margin: 0;
 }
-#left {
-  width: 60%;
-  height: 100%;
-  border: 1px solid #00ff00;
-}
-#right {
-  width: 38%;
-  height: 100%;
-  border: 1px solid #00ff00;
-  display: flex;
-  align-items: center;
-}
-img {
-  width: 100%;
-}
 
-.hidden {
-  display: none;
-}
-
-#time-section {
-  height: 40px;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border-bottom: dashed;
-}
-#title {
-  font-size: 1.5rem;
-  margin-right: 1rem;
-}
-#login-section {
-  height: 70px;
-  padding: 0.5rem;
-  padding-left: 1rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border-bottom: dashed;
-}
-
-#todo-section {
-  padding: 0.5rem;
-  padding-top: 1.5rem;
-  border-bottom: dashed;
-  max-height: 360px;
-  overflow: auto;
-}
-#todo-title {
-  font-size: 1.2rem;
-}
-#todo-section::-webkit-scrollbar {
-  width: 16px;
-}
-#todo-section::-webkit-scrollbar-track {
-  background: black;
-  border-left: 1px solid #00ff00;
-}
-#todo-section::-webkit-scrollbar-thumb {
-  background: #00ff00;
-  border-radius: 10px;
-}
 span {
   margin-right: 1rem;
 }
@@ -91,6 +30,7 @@ button {
   border: 1px solid #00ff00;
   cursor: pointer;
 }
+
 input[type="text"] {
   outline: none;
   background: black;
@@ -99,9 +39,11 @@ input[type="text"] {
   border: 1px solid #00ff00;
   padding: 1rem;
 }
+
 input[type="text"]::placeholder {
   color: #04d604;
 }
+
 input[type="submit"] {
   padding: 1rem;
   background-color: black;
@@ -109,6 +51,71 @@ input[type="submit"] {
   color: #00ff00;
   cursor: pointer;
 }
+
+.hidden {
+  display: none;
+}
+
+#left {
+  width: 60%;
+  height: 100%;
+  border: 1px solid #00ff00;
+}
+
+#title {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+/* time-section */
+#time-section {
+  height: 40px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: dashed;
+}
+
+/* login-section */
+#login-section {
+  height: 70px;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: dashed;
+}
+
+/* todo-section */
+#todo-section {
+  padding: 0.5rem;
+  padding-top: 1.5rem;
+  border-bottom: dashed;
+  max-height: 360px;
+  overflow: auto;
+}
+
+#todo-title {
+  font-size: 1.2rem;
+}
+
+#todo-section::-webkit-scrollbar {
+  width: 16px;
+}
+
+#todo-section::-webkit-scrollbar-track {
+  background: black;
+  border-left: 1px solid #00ff00;
+}
+
+#todo-section::-webkit-scrollbar-thumb {
+  background: #00ff00;
+  border-radius: 10px;
+}
+
+/* weather-section */
 #weather-section {
   display: flex;
   height: 40px;
@@ -116,6 +123,19 @@ input[type="submit"] {
   padding: 0.5rem;
   align-items: center;
 }
+
 #weather span {
   font-size: 1.5rem;
+}
+
+#right {
+  width: 38%;
+  height: 100%;
+  border: 1px solid #00ff00;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 100%;
 }
