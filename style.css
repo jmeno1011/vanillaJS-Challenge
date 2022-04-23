@@ -24,10 +24,16 @@ h2 {
   border: 1px solid #00ff00;
 }
 #right {
-  width: 40%;
+  width: 38%;
   height: 100%;
   border: 1px solid #00ff00;
+  display: flex;
+  align-items: center;
 }
+img {
+  width: 100%;
+}
+
 .hidden {
   display: none;
 }
@@ -40,7 +46,7 @@ h2 {
   align-items: center;
   border-bottom: dashed;
 }
-#clock-title {
+#title {
   font-size: 1.5rem;
   margin-right: 1rem;
 }
@@ -51,9 +57,25 @@ h2 {
   color: #00ff00;
 } */
 #todo-section {
-  margin-top: 1rem;
   padding: 0.5rem;
+  padding-top: 1.5rem;
   border-bottom: dashed;
+  max-height: 450px;
+  overflow: auto;
+}
+#todo-title {
+  font-size: 1.2rem;
+}
+#todo-section::-webkit-scrollbar {
+  width: 16px;
+}
+#todo-section::-webkit-scrollbar-track {
+  background: black;
+  border-left: 1px solid #00ff00;
+}
+#todo-section::-webkit-scrollbar-thumb {
+  background: #00ff00;
+  border-radius: 10px;
 }
 span {
   margin-right: 1rem;
@@ -75,4 +97,15 @@ button {
 }
 #todo-input::placeholder {
   color: #04d604;
+}
+
+#weather-section {
+  display: flex;
+  height: 40px;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  align-items: center;
+}
+#weather span {
+  font-size: 1.5rem;
 }
